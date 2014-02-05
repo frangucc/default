@@ -58,11 +58,11 @@ button::-moz-focus-inner {
     color: #b94a48;
 }
 
-label {
-    top: -20px;
-    font-size: 11px;
-    position: absolute;
-}
+/*label {*/
+    /*top: -20px;*/
+    /*font-size: 11px;*/
+    /*position: absolute;*/
+/*}*/
 
 label.required{
     color: red;

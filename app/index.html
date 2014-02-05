@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>451order</title>
 	<link rel="stylesheet" href="css/bootstrap/{{AppConst.bootstrapFileName || 'bootstrap-451.css'}}">
+	<link rel="stylesheet" href="css/bootstrap-additions.min.css">
     <link href="css/font-awesome.css" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="css/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="css/angular-motion.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/app.css"/>
     <link rel="stylesheet" href="css/custom.css"/>
@@ -100,6 +102,7 @@
 	<script src="js/controllers/securityCtrl.js"></script>
 	<script src="js/controllers/conditionsCtrl.js"></script>
     <script src="js/controllers/giftCardRedemptionCtrl.js"></script>
+    <script src="js/controllers/developmentCtrl.js"></script>
 
     <script src="js/services/interceptors.js"></script>
     <script src="js/services/errorService.js"></script>
@@ -121,6 +124,10 @@
     <script src="js/services/resourceService.js"></script>
 
     <script src="js/factories/fileReader.js"></script>
+    <script src="js/factories/dimensions.js"></script>
+    <script src="js/factories/debounce.js"></script>
+    <script src="js/factories/date-parser.js"></script>
+    <script src="js/factories/parse-options.js"></script>
 
     <script src="js/directives/match.js"></script>
     <script src="js/directives/buttonredirect.js"></script>
@@ -150,17 +157,21 @@
 
     <script src="js/directives/printing.js"></script>
 
-    <script src="js/bootstrap/affix.js"></script>
-    <script src="js/bootstrap/alert.js"></script>
-    <script src="js/bootstrap/button.js"></script>
-    <script src="js/bootstrap/carousel.js"></script>
-    <script src="js/bootstrap/collapse.js"></script>
-    <script src="js/bootstrap/dropdown.js"></script>
-    <script src="js/bootstrap/modal.js"></script>
-    <script src="js/bootstrap/scrollspy.js"></script>
-    <script src="js/bootstrap/tab.js"></script>
-    <script src="js/bootstrap/tooltip.js"></script>
-    <script src="js/bootstrap/transition.js"></script>
-
+    <script src="lib/angular-strap/affix.js"></script>
+    <script src="lib/angular-strap/alert.js"></script>
+    <script src="lib/angular-strap/button.js"></script>
+    <script src="lib/angular-strap/aside.js"></script>
+    <script src="lib/angular-strap/datepicker.js"></script>
+    <script src="lib/angular-strap/dropdown.js"></script>
+    <script src="lib/angular-strap/modal.js"></script>
+    <script src="lib/angular-strap/scrollspy.js"></script>
+    <script src="lib/angular-strap/tab.js"></script>
+    <script src="lib/angular-strap/tooltip.js"></script>
+    <script src="lib/angular-strap/typeahead.js"></script>
+    <script src="lib/angular-strap/navbar.js"></script>
+    <script src="lib/angular-strap/module.js"></script>
+    <script src="lib/angular-strap/popover.js"></script>
+    <script src="lib/angular-strap/select.js"></script>
+    <script src="lib/angular-strap/timepicker.js"></script>
 </body>
 </html>

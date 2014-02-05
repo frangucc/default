@@ -1,0 +1,57 @@
+<section class="container development-view">
+    <!--ALERT-->
+    <button type="button" class="btn btn-lg btn-info" data-placement="top-left" data-container="body" data-duration="100" bs-alert="alert">Click to toggle alert
+        <br>
+        <small>(using an object)</small>
+    </button>
+    <br/>
+    <!--POPOVER-->
+    <br/>
+    <button type="button" data-html="true" class="btn btn-lg btn-primary" data-placement="right" bs-popover="popover">Click to toggle popover
+        <br>
+        <small>(using an object)</small>
+    </button>
+    <br/>
+    <!--SELECTION INPUT-->
+    <br/>
+    <button type="button" class="btn btn-default" ng-model="selectedIcons" data-html="1" data-multiple="1" ng-options="icon.value as icon.label for icon in icons" bs-select>
+        <span class="caret"></span>
+    </button>
+    <br/>
+    <!--DATEPICKER-->
+    <br/>
+    <div class="row">
+        <div class="col-xs-5">
+            <div class="form-group" ng-class="{'has-error': datepickerForm.date.$invalid}">
+                <label class="control-label"><i class="fa fa-calendar"></i> Date <small>(as date)</small></label>
+                <input type="text" class="form-control" ng-model="selectedDate" name="date" bs-datepicker>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <!--TOOLTIP-->
+    <br/>
+    <div class="row">
+        <div class="input-group col-xs-5">
+        <span class="input-group-btn">
+        <button data-html="true" class="btn btn-primary" type="button" data-trigger="click" data-type="success" title="{{tooltip.title}}" bs-tooltip="tooltip">Click me</button>
+        </span>
+            <input data-html="true" class="form-control" data-placement="right" data-type="info" data-container="body" placeholder="Focus to toggle tooltip" data-trigger="focus" bs-tooltip="tooltip" type="text">
+        </div>
+    </div>
+    <div class="checkbox">
+        <label data-placement="bottom" data-type="info" data-animation="am-fade-and-scale" data-html="true" bs-tooltip="tooltip">
+            <input ng-model="tooltip.checked" type="checkbox"> Remember me
+        </label>
+    </div>
+    <br/>
+    <br/>
+    <!--ADDRESS INPUT-->
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <label><i class="fa fa-globe"></i> State</label>
+            <input type="text" class="form-control" ng-model="selectedState" ng-options="state for state in states" placeholder="Enter state" bs-typeahead>
+        </div>
+    </form>
+
+</section>
