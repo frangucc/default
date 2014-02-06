@@ -1,42 +1,4 @@
-<header class="navbar navbar-default navbar-fixed-top" role="banner" headroom>
-    <div class="container">
-        <nav role="navigation">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="cart" ng-class="{'active': isActive(['cart', 'checkout'])}">
-                    <a ng-show="cartCount" class="cart" href="#/cart">
-                        <span ng-bind="cartCount" class="badge badge-cart"></span>
-                        <i class="fa fa-shopping-cart"></i>
-                        <i class="fa fa-caret-down" ng-show="isActive(['cart', 'checkout'])"></i>
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="nav navbar-nav">
-                <li class="back animated fadeInLeft" ng-class="{'ng-hide': isActive('catalog')}">
-                    <a href back-step class="back">
-                        <i class="fa fa-arrow-left"></i>
-                    </a>
-                </li>
-                <li class="products" ng-class="{'active': isInPath('catalog') || isInPath('product') || isInPath('cart/default') || isInPath('search')}">
-                    <a ng-show="Four51User.isAuthenticated()" href="#/catalog"><i class="fa fa-home"></i><span class="text-nav"> Products</span></a>
-                </li>
-                <li class="order" ng-class="{'active': isActive('order'), 'active-xs': isActive('favoriteorders')}">
-                    <a href="#/order"><i class="fa fa-bar-chart-o"></i><span class="text-nav"> Orders</span></a>
-                </li>
-                <li class="favorites" ng-class="{'active': isActive('favoriteorders')}">
-                    <a href="#/favoriteorders" ><i class="fa fa-star"></i><span class="text-nav"> Favorites</span></a>
-                </li>
-                <li class="admin" ng-class="{'active': isActive(['admin', 'addresses', 'address', 'messages', 'message'])}">
-                    <a href="#/admin"><i class="fa fa-user"></i><span class="text-nav"> My Account</span></a>
-                </li>
-                <li class="admin-dd" ng-class="{'active': isActive(['admin', 'addresses', 'address', 'messages', 'message'])}">
-                    <a data-html="1" bs-dropdown="myAccountDropdown"><i class="fa fa-user"></i><span class="text-nav"> My Account </span><b class="caret text-nav"></b></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<!--<header class="header navbar navbar-inner animated">
+<header class="header navbar navbar-inner animated">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" headroom>
         <section>
             <div class="container collapse navbar-collapse navbar-ex1-collapse visible-xs">
@@ -88,4 +50,4 @@
         </section>
     </nav>
 </header>
--->
+

@@ -8,7 +8,7 @@ angular.module('mgcrea.ngStrap.typeahead', ['mgcrea.ngStrap.tooltip', 'mgcrea.ng
       animation: 'am-fade',
       prefixClass: 'typeahead',
       placement: 'bottom-left',
-      template: 'partials/AngularSnap/typeahead.tpl.html',
+      template: 'partials/AngularStrap/typeahead.tpl.html',
       trigger: 'focus',
       container: false,
       keyboard: true,

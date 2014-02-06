@@ -9,7 +9,7 @@ angular.module('mgcrea.ngStrap.tooltip', ['mgcrea.ngStrap.helpers.dimensions'])
       prefixClass: 'tooltip',
       container: false,
       placement: 'top',
-      template: 'partials/AngularSnap/tooltip.tpl.html',
+      template: 'partials/AngularStrap/tooltip.tpl.html',
       contentTemplate: false,
       trigger: 'hover focus',
       keyboard: false,

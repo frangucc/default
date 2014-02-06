@@ -12,7 +12,7 @@ angular.module('mgcrea.ngStrap.alert', [])
       animation: 'am-fade',
       prefixClass: 'alert',
       placement: null,
-      template: 'partials/AngularSnap/alert.tpl.html',
+      template: 'partials/AngularStrap/alert.tpl.html',
       container: false,
       element: null,
       backdrop: false,

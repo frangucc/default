@@ -8,7 +8,7 @@ angular.module('mgcrea.ngStrap.aside', ['mgcrea.ngStrap.modal'])
       animation: 'am-fade-and-slide-right',
       prefixClass: 'aside',
       placement: 'right',
-      template: 'partials/AngularSnap/aside.tpl.html',
+      template: 'partials/AngularStrap/aside.tpl.html',
       contentTemplate: false,
       container: false,
       element: null,

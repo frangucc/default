@@ -22,6 +22,7 @@ body {
     -webkit-text-stroke: 1px transparent;
     margin-bottom: 100px;
     overflow-x: hidden;
+    margin-top:60px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -972,7 +973,7 @@ li.selected {
 }
 .app-loading-indicator-title p {margin: 0 auto; width: 500px;padding: 10px;}
 .container-content {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .product-details-add {
@@ -1596,6 +1597,7 @@ ul.view-variant-list{
 .jumbotron {
     padding-bottom: 24px;
     padding-top: 24px;
+    margin-bottom:0;
 }
 
 .navbar-nav > li > a {
@@ -1660,4 +1662,15 @@ ul.view-variant-list{
 
 .btn-group {
     width: 100%;
+}
+
+/*ROB*/
+.admin-dd{
+    cursor:pointer;
+}
+.nav .caret,
+.nav a:hover .caret
+{
+    border-top-color:#FFF;
+    border-bottom-color:#FFF;
 }

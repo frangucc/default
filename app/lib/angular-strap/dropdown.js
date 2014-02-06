@@ -8,7 +8,7 @@ angular.module('mgcrea.ngStrap.dropdown', ['mgcrea.ngStrap.tooltip'])
       animation: 'am-fade',
       prefixClass: 'dropdown',
       placement: 'bottom-left',
-      template: 'partials/AngularSnap/dropdown.tpl.html',
+      template: 'partials/AngularStrap/dropdown.tpl.html',
       trigger: 'click',
       container: false,
       keyboard: true,

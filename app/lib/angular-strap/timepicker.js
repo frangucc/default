@@ -8,7 +8,7 @@ angular.module('mgcrea.ngStrap.timepicker', ['mgcrea.ngStrap.helpers.dateParser'
       animation: 'am-fade',
       prefixClass: 'timepicker',
       placement: 'bottom-left',
-      template: 'partials/AngularSnap/timepicker.tpl.html',
+      template: 'partials/AngularStrap/timepicker.tpl.html',
       trigger: 'focus',
       container: false,
       keyboard: true,

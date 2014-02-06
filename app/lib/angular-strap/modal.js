@@ -8,7 +8,7 @@ angular.module('mgcrea.ngStrap.modal', ['mgcrea.ngStrap.helpers.dimensions'])
       animation: 'am-fade',
       prefixClass: 'modal',
       placement: 'top',
-      template: 'partials/AngularSnap/modal.tpl.html',
+      template: 'partials/AngularStrap/modal.tpl.html',
       contentTemplate: false,
       container: false,
       element: null,

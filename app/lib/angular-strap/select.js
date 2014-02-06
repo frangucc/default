@@ -8,7 +8,7 @@ angular.module('mgcrea.ngStrap.select', ['mgcrea.ngStrap.tooltip', 'mgcrea.ngStr
       animation: 'am-fade',
       prefixClass: 'select',
       placement: 'bottom-left',
-      template: 'partials/AngularSnap/select.tpl.html',
+      template: 'partials/AngularStrap/select.tpl.html',
       trigger: 'focus',
       container: false,
       keyboard: true,

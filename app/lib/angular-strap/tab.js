@@ -12,7 +12,7 @@ angular.module('mgcrea.ngStrap.tab', [])
 
     var defaults = this.defaults = {
       animation: 'am-fade',
-      template: 'partials/AngularSnap/tab.tpl.html'
+      template: 'partials/AngularStrap/tab.tpl.html'
     };
 
     this.$get = function() {
