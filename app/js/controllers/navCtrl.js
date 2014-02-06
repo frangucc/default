@@ -49,16 +49,18 @@ four51.app.controller('NavCtrl', function ($location, $route, $scope, $451, User
 		$route.reload();
 	}
 
-    $scope.myAccountDropdown = [
-        {text: 'User Information', href: '#/admin'},
-        {text: 'Addresses', href: '#/addresses'},
-        {text: 'Messages', href: '#/message'},
-        {"divider":true},
-        {text: '<i class="fa fa-power-off text-danger"></i> Logout', click: 'Logout()'},
-        {text: '<i class="fa fa-archive text-danger"></i> Clear Cache', click: 'Clear()'}
-    ]
-//TODO -- implement permissions based on user for hiding and showing items in the dropdown --
-//    if(!User.Permissions.contains('ViewSelfAdmin')){$scope.myAccountDropdown.splice(index, 0)}
+    $scope.myAccountDropdown = [];
+
+    $scope.dropdownPermissions = function(){
+        $scope.user.Permissions.contains('ViewSelfAdmin') ? $scope.myAccountDropdown.push({text: 'User Information', href: '#/admin'}) : '';
+        $scope.user.Permissions.contains('CreateShipToAddress') ? $scope.myAccountDropdown.push({text: 'Addresses', href: '#/addresses'}) : '';
+        $scope.user.Permissions.contains('ViewMessaging') ? $scope.myAccountDropdown.push({text: 'Messages', href: '#/message'}) : '';
+        $scope.myAccountDropdown.push({"divider":true});
+        $scope.user.Type != 'TempCustomer' ? $scope.myAccountDropdown.push({text: '<i class="fa fa-power-off text-danger"></i> Logout', click: 'Logout()'}) : '';
+        $scope.myAccountDropdown.push({text: '<i class="fa fa-archive text-danger"></i> Clear Cache', click: 'Clear()'});
+    };
+
+    $scope.dropdownPermissions();
 
 	$scope.$on('event:orderUpdate', function(event, order) {
 		$scope.cartCount = order ? (order.Status == 'Unsubmitted' || order.Status == 'AwaitingApproval') ? order.LineItems.length : null : null;

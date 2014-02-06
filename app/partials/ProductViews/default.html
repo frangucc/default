@@ -133,12 +133,14 @@
     </div>
 
     <div class="view-footer navbar-fixed-bottom">
-        <loadingindicator ng-show="displayLoadingIndicator" />
-       <div class="view-error-list" ng-show="showAddToCartErrors">
-		   <ol ng-repeat="e in lineItemErrors">
-			   <li class="alert-warning">{{e}}</li>
-               <li class="alert-warning" ng-show="variantLineItems[v.InteropID].qtyError">{{variantLineItems[v.InteropID].qtyError}}</li>
-		   </ol>
-       </div>
+        <div class="container">
+            <loadingindicator ng-show="displayLoadingIndicator" />
+            <div class="view-error-list" ng-show="showAddToCartErrors">
+                <ol ng-repeat="e in lineItemErrors">
+                    <li class="alert-warning">{{e}}</li>
+                    <li class="alert-warning" ng-show="variantLineItems[v.InteropID].qtyError">{{variantLineItems[v.InteropID].qtyError}}</li>
+                </ol>
+            </div>
+        </div>
     </div>
 </section>

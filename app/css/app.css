@@ -1531,10 +1531,10 @@ ul.view-variant-list{
 /* Hello bootstrap, how do you do? */
 /* ----------------------------------------------------------------------------------------------- */
 
-/* full screen: if we want to go back to default bootstrap widths, simply remove the below container rule */
+/* full screen: if we want to go back to default bootstrap widths, simply remove the below container rule
 .container {
     max-width: 100%;
-}
+}*/
 
 .navbar .nav a {
     -webkit-transition: all ease-in-out .2s;
